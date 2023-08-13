@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Code](https://github.com/lastiwan89/fem-news-homepage)
+- Live Site URL: [Netlify](https://64d8f8927408bc2ae289cc87--starlit-taffy-47f949.netlify.app/)
 
 ## My process
 
