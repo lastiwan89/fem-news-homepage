@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  src: url("../assets/fonts/static/Inter-Bold.ttf") format(truetype), url("../assets/fonts/static/Inter-ExtraBold.ttf") format(truetype), url("../assets/fonts/static/Inter-Regular.ttf") format(truetype);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+@media (max-width: 600px) {
+  body {
+    min-height: min-content;
+  }
+}
+
+header {
+  max-width: 1800px;
+  padding: 2rem 1rem;
+}
+@media (max-width: 600px) {
+  header {
+    padding-bottom: 1rem;
+  }
+}
+header .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .nav .logo {
+  margin-right: auto;
+  cursor: pointer;
+}
+header .nav__lists {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  header .nav__lists {
+    display: none;
+  }
+}
+header .nav__lists a {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.625rem;
+  color: hsl(236, 13%, 42%);
+}
+header .nav__lists a:hover {
+  color: hsl(5, 85%, 63%);
+}
+header .nav__lists .nav__lists.active {
+  background-color: hsl(5, 85%, 63%);
+  position: absolute;
+  display: block;
+  gap: 3em;
+}
+header .nav .nav__lists.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  position: absolute;
+  position: -webkit-sticky;
+  width: 300px;
+  min-height: 100vh;
+  padding-top: 30%;
+  padding-left: 2rem;
+  top: 0;
+  right: 0;
+  background-color: hsl(36, 100%, 99%);
+}
+header .nav .menu {
+  display: none;
+}
+@media (max-width: 600px) {
+  header .nav .menu {
+    display: block;
+  }
+}
+header .nav .menu__bars.active {
+  display: none;
+}
+header .nav .menu__close {
+  display: none;
+}
+header .nav .menu__close.active {
+  display: block;
+}
+header .nav .menu.active {
+  position: absolute;
+  display: block;
+  top: 1.8%;
+  right: 5%;
+}
+
+header.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+main {
+  max-width: 1131px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 292px 200px 200px;
+  grid-template-areas: "hero hero sidebar" "hero hero sidebar" "article article article";
+  gap: 2rem;
+  padding: 1rem;
+  justify-items: start;
+  align-items: stretch;
+}
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 500px 1fr;
+    grid-template-areas: "hero" "sidebar" "article";
+  }
+}
+main .hero {
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "image image" "text text";
+  align-items: center;
+  justify-items: start;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  main .hero {
+    gap: 0.5rem;
+  }
+}
+main .hero__image {
+  grid-area: image;
+}
+main .hero__container {
+  grid-area: text;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 600px) {
+  main .hero__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px 150px;
+    gap: 2rem;
+  }
+}
+main .hero__container h1 {
+  font-size: 3.5rem;
+  padding-right: 2rem;
+}
+@media (max-width: 600px) {
+  main .hero__container h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding-right: 0;
+    width: 20rem;
+  }
+}
+main .hero__text {
+  line-height: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0.5rem;
+}
+@media (max-width: 600px) {
+  main .hero__text {
+    gap: 2rem;
+    padding: 0;
+  }
+}
+main .hero__text--item {
+  color: hsl(236, 13%, 42%);
+}
+main .hero__text--button {
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.27344rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  color: hsl(36, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+}
+main .hero__text--button:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+main .news {
+  grid-area: sidebar;
+  background-color: hsl(240, 100%, 5%);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .news hr {
+  color: hsl(236, 13%, 42%);
+}
+main .news__title {
+  font-size: 2.5rem;
+  color: hsl(35, 77%, 62%);
+}
+main .news__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .news__items--title {
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: hsl(36, 100%, 99%);
+}
+main .news__items--title:hover {
+  color: hsl(35, 77%, 62%);
+}
+main .news__items--text {
+  color: hsl(233, 8%, 79%);
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+main .aside {
+  grid-area: article;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+@media (max-width: 600px) {
+  main .aside {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+main .aside .article {
+  display: flex;
+  gap: 1rem;
+}
+main .aside .article__image {
+  max-height: 200px;
+}
+main .aside .article__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 600px) {
+  main .aside .article__item {
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+}
+main .aside .article__item--number {
+  font-size: 2.5rem;
+  color: hsl(233, 8%, 79%);
+}
+main .aside .article__item--title {
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+main .aside .article__item--title:hover {
+  color: hsl(5, 85%, 63%);
+}
+main .aside .article__item--text {
+  font-size: 0.9375rem;
+  color: hsl(236, 13%, 42%);
+  line-height: 1.625rem;
+}
+
+main.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
