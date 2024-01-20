@@ -7,10 +7,40 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <main>
-      <div>
+    <main class="p-4 max-w-[1440px] mx-auto xl:py-14 xl:px-28">
+      <!-- navbar -->
+      <header class="mb-10">
+        <nav class="flex justify-between items-center">
+          <div>
+            <img src="/assets/images/logo.svg" alt="logo images" />
+          </div>
+          <ul
+            class="hidden md:flex items-center justify-center gap-10 capitalize"
+          >
+            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+              home
+            </li>
+            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+              new
+            </li>
+            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+              popular
+            </li>
+            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+              trending
+            </li>
+            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+              categories
+            </li>
+          </ul>
+          <div id="menu" class="md:hidden">
+            <img src="/assets//images/icon-menu.svg" alt="bars icon" />
+          </div>
+        </nav>
+      </header>
+      <div class="grid md:grid-cols-3 gap-6">
         <!-- hero -->
-        <div>
+        <div class="md:col-span-2">
           <div>
             <img
               class="md:hidden"
@@ -23,12 +53,114 @@
               alt="web 3 image"
             />
           </div>
-          <div></div>
+          <div class="mt-6 md:mt-8 md:grid grid-cols-2">
+            <div>
+              <h1 class="text-40 font-black w-[300px] lg:text-56">
+                The Bright Future of Web 3.0?
+              </h1>
+            </div>
+            <div>
+              <p class="text-15 mb-6 md:mb-8 mt-4 md:mt-0">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                class="bg-red-600 text-slate-100 px-8 py-3 uppercase text-14-cta font-bold"
+              >
+                read more
+              </button>
+            </div>
+          </div>
         </div>
         <!-- news -->
-        <div></div>
+        <div class="bg-slate-800 px-5 mt-10 md:mt-0">
+          <h2 class="text-32 font-bold text-red-200 pt-6">New</h2>
+          <div class="grid grid-rows-3 divide-y divide-slate-600">
+            <div class="flex flex-col py-6">
+              <h3 class="text-slate-100 text-20 font-black">
+                Hydrogen VS Electric Cars
+              </h3>
+              <p class="text-slate-200 opacity-80 text-15 font-regular">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <div class="flex flex-col py-6">
+              <h3 class="text-slate-100 text-20 font-black">
+                The Downsides of AI Artistry
+              </h3>
+              <p class="text-slate-200 opacity-80 text-15 font-regular">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <div class="flex flex-col py-6">
+              <h3 class="text-slate-100 text-20 font-black">
+                Is VC Funding Drying Up?
+              </h3>
+              <p class="text-slate-200 opacity-80 text-15 font-regular">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div></div>
+      <!-- bottom -->
+      <div class="grid gap-8 md:grid-cols-3 mt-16">
+        <div class="grid grid-cols-3 gap-6">
+          <div>
+            <img
+              src="/assets/images/image-retro-pcs.jpg"
+              alt="image-retro-pcs"
+            />
+          </div>
+          <div class="col-span-2 flex flex-col justify-around">
+            <h3 class="text-32 font-bold text-slate-200">01</h3>
+            <p class="text-18 font-black hover:text-red-600 cursor-pointer">
+              Reviving Retro PCs
+            </p>
+            <p class="text-15 font-regular">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+          <div>
+            <img
+              src="/assets/images/image-top-laptops.jpg"
+              alt="image-top-laptops"
+            />
+          </div>
+          <div class="col-span-2 flex flex-col justify-around">
+            <h3 class="text-32 font-bold text-slate-200">02</h3>
+            <p class="text-18 font-black hover:text-red-600 cursor-pointer">
+              Top 10 Laptops of 2022
+            </p>
+            <p class="text-15 font-regular">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+          <div>
+            <img
+              src="/assets/images/image-gaming-growth.jpg"
+              alt="image-gaming-growth"
+            />
+          </div>
+          <div class="col-span-2 flex flex-col justify-around">
+            <h3 class="text-32 font-bold text-slate-200">03</h3>
+            <p class="text-18 font-black hover:text-red-600 cursor-pointer">
+              The Growth of Gaming
+            </p>
+            <p class="text-15 font-regular">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

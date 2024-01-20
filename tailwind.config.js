@@ -23,6 +23,11 @@ module.exports = {
       15: ["15px", { lineHeight: "26px" }],
       "14-cta": ["14px", { lineHeight: "24px", letterSpacing: "4.375px" }],
     },
+    fontWeight: {
+      regular: "400",
+      bold: "700",
+      black: "800",
+    },
     extend: {},
   },
   plugins: [],
