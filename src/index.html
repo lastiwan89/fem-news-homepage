@@ -10,11 +10,12 @@
     <main class="p-4 max-w-[1440px] mx-auto xl:py-14 xl:px-28">
       <!-- navbar -->
       <header class="mb-10">
-        <nav class="flex justify-between items-center">
-          <div>
+        <nav class="flex relative justify-between items-center">
+          <div class="cursor-pointer">
             <img src="/assets/images/logo.svg" alt="logo images" />
           </div>
           <ul
+            id="menu-item"
             class="hidden md:flex items-center justify-center gap-10 capitalize"
           >
             <li class="hover:text-red-600 cursor-pointer text-slate-600">
@@ -34,13 +35,23 @@
             </li>
           </ul>
           <div id="menu" class="md:hidden">
-            <img src="/assets//images/icon-menu.svg" alt="bars icon" />
+            <img
+              id="burger"
+              src="/assets/images/icon-menu.svg"
+              alt="bars icon"
+            />
+            <img
+              id="close"
+              class="hidden"
+              src="/assets/images/icon-menu-close.svg"
+              alt="close icon"
+            />
           </div>
         </nav>
       </header>
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid lg:grid-cols-3 gap-6">
         <!-- hero -->
-        <div class="md:col-span-2">
+        <div class="md:col-span-3 lg:col-span-2">
           <div>
             <img
               class="md:hidden"
@@ -55,7 +66,7 @@
           </div>
           <div class="mt-6 md:mt-8 md:grid grid-cols-2">
             <div>
-              <h1 class="text-40 font-black w-[300px] lg:text-56">
+              <h1 class="text-40 font-black w-[300px] md:text-56">
                 The Bright Future of Web 3.0?
               </h1>
             </div>
@@ -66,7 +77,7 @@
                 But is it really fulfilling its promise?
               </p>
               <button
-                class="bg-red-600 text-slate-100 px-8 py-3 uppercase text-14-cta font-bold"
+                class="bg-red-600 text-slate-100 px-8 py-3 uppercase text-14-cta font-bold hover:bg-slate-800"
               >
                 read more
               </button>
@@ -74,19 +85,23 @@
           </div>
         </div>
         <!-- news -->
-        <div class="bg-slate-800 px-5 mt-10 md:mt-0">
+        <div class="bg-slate-800 px-5 mt-10 md:mt-0 md:col-span-3 lg:col-auto">
           <h2 class="text-32 font-bold text-red-200 pt-6">New</h2>
           <div class="grid grid-rows-3 divide-y divide-slate-600">
-            <div class="flex flex-col py-6">
-              <h3 class="text-slate-100 text-20 font-black">
+            <div class="flex flex-col py-6 gap-4">
+              <h3
+                class="text-slate-100 text-20 font-black hover:text-red-200 cursor-pointer"
+              >
                 Hydrogen VS Electric Cars
               </h3>
               <p class="text-slate-200 opacity-80 text-15 font-regular">
                 Will hydrogen-fueled cars ever catch up to EVs?
               </p>
             </div>
-            <div class="flex flex-col py-6">
-              <h3 class="text-slate-100 text-20 font-black">
+            <div class="flex flex-col py-6 gap-4">
+              <h3
+                class="text-slate-100 text-20 font-black cursor-pointer hover:text-red-200"
+              >
                 The Downsides of AI Artistry
               </h3>
               <p class="text-slate-200 opacity-80 text-15 font-regular">
@@ -94,8 +109,10 @@
                 generation?
               </p>
             </div>
-            <div class="flex flex-col py-6">
-              <h3 class="text-slate-100 text-20 font-black">
+            <div class="flex flex-col py-6 gap-4">
+              <h3
+                class="text-slate-100 text-20 font-black hover:text-red-200 cursor-pointer"
+              >
                 Is VC Funding Drying Up?
               </h3>
               <p class="text-slate-200 opacity-80 text-15 font-regular">
@@ -107,7 +124,7 @@
         </div>
       </div>
       <!-- bottom -->
-      <div class="grid gap-8 md:grid-cols-3 mt-16">
+      <div class="grid lg:grid-cols-3 gap-8 my-16">
         <div class="grid grid-cols-3 gap-6">
           <div>
             <img

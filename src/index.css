@@ -6,8 +6,22 @@
   @font-face {
     font-family: "Inter";
     font-style: normal;
-    src: url("../assets/fonts/static/Inter-Bold.ttf") format(truetype),
+    src:
+      url("../assets/fonts/static/Inter-Bold.ttf") format(truetype),
       url("../assets/fonts/static/Inter-ExtraBold.ttf") format(truetype),
       url("../assets/fonts/static/Inter-Regular.ttf") format(truetype);
+  }
+}
+
+@layer utilities {
+  .active {
+    @apply hidden;
+  }
+  .active-close {
+    @apply block absolute right-0 top-0;
+  }
+
+  .item-close {
+    @apply flex flex-col fixed items-start bg-slate-100 w-3/4 h-full top-0 right-0 pl-6 gap-6;
   }
 }
