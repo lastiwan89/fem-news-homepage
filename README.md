@@ -11,16 +11,10 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![Desktop](./assets/images/web-3-desktop.png)
-![Mobile](./assets/images/web-3-mobile.png)
-![Mobile Overlay menu](./assets/images/web-3-mobile-menu.png)
-
 ### Links
 
 - Solution URL: [Github Code](https://github.com/lastiwan89/fem-news-homepage)
-- Live Site URL: [Netlify](https://64d8f8927408bc2ae289cc87--starlit-taffy-47f949.netlify.app/)
+- Live Site URL: [Vercel](https://fem-news-homepage-amber.vercel.app/)
 
 ## My process
 
