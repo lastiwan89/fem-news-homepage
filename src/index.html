@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <main class="p-4 max-w-[1440px] mx-auto xl:py-14 xl:px-28">
+    <main class="mx-auto max-w-[1440px] p-4 xl:px-28 xl:py-14">
       <!-- navbar -->
       <header class="mb-10">
-        <nav class="flex relative justify-between items-center">
+        <nav class="relative flex items-center justify-between">
           <div class="cursor-pointer">
             <img src="/assets/images/logo.svg" alt="logo images" />
           </div>
           <ul
             id="menu-item"
-            class="hidden md:flex items-center justify-center gap-10 capitalize"
+            class="hidden items-center justify-center gap-10 capitalize md:flex"
           >
-            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+            <li class="cursor-pointer text-slate-600 hover:text-red-600">
               home
             </li>
-            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+            <li class="cursor-pointer text-slate-600 hover:text-red-600">
               new
             </li>
-            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+            <li class="cursor-pointer text-slate-600 hover:text-red-600">
               popular
             </li>
-            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+            <li class="cursor-pointer text-slate-600 hover:text-red-600">
               trending
             </li>
-            <li class="hover:text-red-600 cursor-pointer text-slate-600">
+            <li class="cursor-pointer text-slate-600 hover:text-red-600">
               categories
             </li>
           </ul>
@@ -49,7 +49,7 @@
           </div>
         </nav>
       </header>
-      <div class="grid lg:grid-cols-3 gap-6">
+      <div class="grid gap-6 lg:grid-cols-3">
         <!-- hero -->
         <div class="md:col-span-3 lg:col-span-2">
           <div>
@@ -64,20 +64,20 @@
               alt="web 3 image"
             />
           </div>
-          <div class="mt-6 md:mt-8 md:grid grid-cols-2">
+          <div class="mt-6 grid-cols-2 md:mt-8 md:grid">
             <div>
-              <h1 class="text-40 font-black w-[300px] md:text-56">
+              <h1 class="w-[300px] text-40 font-black md:text-56">
                 The Bright Future of Web 3.0?
               </h1>
             </div>
             <div>
-              <p class="text-15 mb-6 md:mb-8 mt-4 md:mt-0">
+              <p class="mb-6 mt-4 text-15 md:mb-8 md:mt-0">
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
               <button
-                class="bg-red-600 text-slate-100 px-8 py-3 uppercase text-14-cta font-bold hover:bg-slate-800"
+                class="bg-red-600 px-8 py-3 text-14-cta font-bold uppercase text-slate-100 hover:bg-slate-800"
               >
                 read more
               </button>
@@ -85,37 +85,37 @@
           </div>
         </div>
         <!-- news -->
-        <div class="bg-slate-800 px-5 mt-10 md:mt-0 md:col-span-3 lg:col-auto">
-          <h2 class="text-32 font-bold text-red-200 pt-6">New</h2>
+        <div class="mt-10 bg-slate-800 px-5 md:col-span-3 md:mt-0 lg:col-auto">
+          <h2 class="pt-6 text-32 font-bold text-red-200">New</h2>
           <div class="grid grid-rows-3 divide-y divide-slate-600">
-            <div class="flex flex-col py-6 gap-4">
+            <div class="flex flex-col gap-4 py-6">
               <h3
-                class="text-slate-100 text-20 font-black hover:text-red-200 cursor-pointer"
+                class="cursor-pointer text-20 font-black text-slate-100 hover:text-red-200"
               >
                 Hydrogen VS Electric Cars
               </h3>
-              <p class="text-slate-200 opacity-80 text-15 font-regular">
+              <p class="text-15 font-regular text-slate-200 opacity-80">
                 Will hydrogen-fueled cars ever catch up to EVs?
               </p>
             </div>
-            <div class="flex flex-col py-6 gap-4">
+            <div class="flex flex-col gap-4 py-6">
               <h3
-                class="text-slate-100 text-20 font-black cursor-pointer hover:text-red-200"
+                class="cursor-pointer text-20 font-black text-slate-100 hover:text-red-200"
               >
                 The Downsides of AI Artistry
               </h3>
-              <p class="text-slate-200 opacity-80 text-15 font-regular">
+              <p class="text-15 font-regular text-slate-200 opacity-80">
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
             </div>
-            <div class="flex flex-col py-6 gap-4">
+            <div class="flex flex-col gap-4 py-6">
               <h3
-                class="text-slate-100 text-20 font-black hover:text-red-200 cursor-pointer"
+                class="cursor-pointer text-20 font-black text-slate-100 hover:text-red-200"
               >
                 Is VC Funding Drying Up?
               </h3>
-              <p class="text-slate-200 opacity-80 text-15 font-regular">
+              <p class="text-15 font-regular text-slate-200 opacity-80">
                 Private funding by VC firms is down 50% YOY. We take a look at
                 what that means.
               </p>
@@ -124,7 +124,7 @@
         </div>
       </div>
       <!-- bottom -->
-      <div class="grid lg:grid-cols-3 gap-8 my-16">
+      <div class="my-16 grid gap-8 lg:grid-cols-3">
         <div class="grid grid-cols-3 gap-6">
           <div>
             <img
@@ -134,7 +134,7 @@
           </div>
           <div class="col-span-2 flex flex-col justify-around">
             <h3 class="text-32 font-bold text-slate-200">01</h3>
-            <p class="text-18 font-black hover:text-red-600 cursor-pointer">
+            <p class="cursor-pointer text-18 font-black hover:text-red-600">
               Reviving Retro PCs
             </p>
             <p class="text-15 font-regular">
@@ -151,7 +151,7 @@
           </div>
           <div class="col-span-2 flex flex-col justify-around">
             <h3 class="text-32 font-bold text-slate-200">02</h3>
-            <p class="text-18 font-black hover:text-red-600 cursor-pointer">
+            <p class="cursor-pointer text-18 font-black hover:text-red-600">
               Top 10 Laptops of 2022
             </p>
             <p class="text-15 font-regular">
@@ -168,7 +168,7 @@
           </div>
           <div class="col-span-2 flex flex-col justify-around">
             <h3 class="text-32 font-bold text-slate-200">03</h3>
-            <p class="text-18 font-black hover:text-red-600 cursor-pointer">
+            <p class="cursor-pointer text-18 font-black hover:text-red-600">
               The Growth of Gaming
             </p>
             <p class="text-15 font-regular">
